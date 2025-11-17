@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    image: ghcr.io/SaiF-654/three-tier-app-backend:latest
+    image: 005743379632.dkr.ecr.us-west-2.amazonaws.com/three-tier-app-backend:latest
     ports:
       - "5000:5000"
     depends_on:
@@ -21,7 +21,7 @@ services:
       retries: 3
 
   frontend:
-    image: ghcr.io/SaiF-654/three-tier-app-frontend:latest
+    image: 005743379632.dkr.ecr.us-west-2.amazonaws.com/three-tier-app-frontend:latest
     ports:
       - "3000:3000"
     depends_on:
